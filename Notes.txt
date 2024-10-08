@@ -1,0 +1,210 @@
+Cyber security Notes
+---------------------------------------------------------------------
+
+TABLE OF CONTENTS
+1.............. Commands
+2.............. Linux Terminal Study Guide
+	2a.............. Navigating the File System
+	2b.............. CRUD Operations on Files and Directories
+	2c.............. File Permissions and chmod
+	2d.............. Using sudo for Superuser Privileges
+	2e.............. Practice Exercises
+3.............. Preparation Tips
+4.............. ChatGPT prompts
+5..............Unorganized Notes 
+
+Working on: 
+Preparing for the spotcheck
+su - vs sudo
+change username and pc
+GIT
+
+
+1..............
+ Commands:
+•	cd: change directory. Example: nasr@debian:~$ cd Documents
+•	pwd: present working directory. Example: nasr@debian:~$ pwd
+•	ls: gives you a list of all the folders you have access to. Example: nasr@debian:~$ ls
+•	../: Go back up 1. Example: nasr@debian:~$ cd ..
+•	../../: Chain ../ together
+•	clear: clear
+•	ctrl + z: Cancel whatever process you are working on and go back to terminal.
+•	mkdir: Makes new folder inside specified directory. nasr@debian:~$ mkdir (Folder name)
+•	touch: Makes new .txt file in specified directory. nasr@debian:~$ touch (File name)
+•	mv: Renames specified file or folders. Example: nasr@debian:~/Documents$ mv (File or Folder name) (new name)
+•	mv: Moves files and folders to specified locations (Note: /home/user/Documents). nasr@debian:~/Documents$ mv (File or Folder name) (new location)
+•	cd / : Turns location into root directory and that should make the terminal location /
+	ls -l gives us details
+	su -: switch user, usually the root user
+	sudo: stands for "super user do"
+	
+--------------------------------------------------------------------
+
+2..............
+Linux Command Line Study Guide for Upcoming Spot Checks
+Objectives
+
+Navigate the Linux file system using basic commands.
+Perform CRUD (Create, Read, Update, Delete) operations on files and directories.
+Modify file permissions using chmod.
+Execute commands with superuser privileges using sudo.
+-----------------------------------------------------------------
+
+2a..............
+1. Navigating the File System
+Commands to Practice:
+
+pwd — Displays your current directory.
+
+ls — Lists files and directories.
+
+
+Options:
+
+ls -l (detailed view)
+ls -a (shows hidden files)
+cd — Changes the current directory.
+
+Examples:
+
+cd /path/to/directory (absolute path)
+cd Documents (relative path)
+cd .. (move up one directory)
+cd ~ (go to home directory)
+
+Tips:
+
+Use man [command] to read the manual for any command.
+Google searches like "How to use the ls command in Linux" can provide quick tutorials.
+Ask ChatGPT for explanations or examples if you're unsure how a command works.
+
+---------------------------------------------------------------
+
+2b..............
+2. CRUD Operations on Files and Directories
+Create:
+
+touch filename.txt — Creates an empty file.
+mkdir myfolder — Creates a new directory.
+
+Read:
+
+cat filename.txt — Displays the contents of a file.
+less filename.txt — Allows you to scroll through a file.
+
+Update:
+
+nano filename.txt — Opens a file in the Nano text editor.
+echo "Text" &gt;&gt; filename.txt — Appends text to a file.
+
+Delete:
+
+rm filename.txt — Removes a file.
+rmdir myfolder — Removes an empty directory.
+rm -r myfolder — Removes a directory and its contents recursively.
+
+Tips:
+
+Be cautious with rm commands; deleted files can't be easily recovered.
+For more examples, search "Basic file operations in Linux" on Google or ask ChatGPT.
+
+------------------------------------------------------
+
+2c..............
+3. File Permissions and chmod
+Understanding Permissions:
+
+Use ls -l to view file permissions.
+
+Permissions are shown as -rwxrwxrwx, divided into User (u), Group (g), and Others (o).
+
+r — Read (4)
+w — Write (2)
+x — Execute (1)
+
+Changing Permissions:
+
+Symbolic method:
+
+chmod u+x filename — Adds execute permission for the user.
+chmod g-w filename — Removes write permission from the group.
+
+
+Numeric method:
+
+chmod 755 filename — Sets permissions to rwxr-xr-x.
+
+Tips:
+
+Practice changing permissions and observe the effects.
+Online resources like "Understanding chmod in Linux" can be very helpful.
+
+---------------------------------------------------------------------
+
+2d..............
+4. Using sudo for Superuser Privileges
+Basics:
+
+sudo [command] — Runs a command with superuser privileges.
+Example: sudo apt update — Updates package lists.
+
+Tips:
+
+Use sudo carefully to avoid making unintended system changes.
+If you need clarification, ask ChatGPT or search "How to use sudo in Linux."
+
+----------------------------------------------------------------------
+
+2e..............
+Practice Exercises
+
+
+Navigation and File Management:
+
+Create a directory named project and navigate into it.
+Inside project, create a file called notes.txt.
+Go back to your home directory.
+
+
+File Editing and Viewing:
+
+Add the text "Hello, Linux!" to notes.txt using echo.
+View the contents using cat and less.
+
+
+Permission Changes:
+
+Make notes.txt executable.
+Verify the permission changes with ls -l.
+
+
+Using sudo:
+
+Attempt to create a file in /root using sudo.
+Update your system's package list with sudo apt update.
+
+-----------------------------------------------------------------
+
+3..............
+Preparation Tips:
+
+Hands-On Practice: The more you use these commands, the more comfortable you'll become.
+Understand the 'Why': Don't just memorize commands—understand what they do.
+Ask for Help: If you're stuck, use the resources above or reach out to me during class time and work periods.
+-----------------------------------------------------------------
+
+4..............
+Here are two example prompts to use in an AI such as ChatGPT to help you learn:
+
+Example 1:  
+Please teach me the basics of Linux commands on Debian 12 using the terminal. Focus on navigating directories, performing CRUD operations, and understanding file permissions. Use examples based on [my chosen theme] and include placeholders for me to fill in specific variables. 
+
+Example 2:  
+Create an easy-to-follow tutorial that teaches me the fundamentals of Linux commands on Debian 12 via the terminal. Cover directory navigation, CRUD operations on files and folders, and understanding file permissions. Incorporate examples related to [a theme I choose] and leave placeholders for personalized variables.
+Examples of your theme may be "Volleyball, hockey, zoo animals, space travel..." or anything else school appropriate. 
+--------------------------------------------------------------------
+
+5..............
+Unorganized notes That need to be organized:
+
+-------------------------------------------------------------------
