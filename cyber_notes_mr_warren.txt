@@ -1,0 +1,211 @@
+*************************************************************************************************************
+* ██████╗██╗   ██╗██████╗ ███████╗██████╗     ███████╗███████╗ ██████╗██╗   ██╗██████╗ ██╗████████╗██╗   ██╗*
+*██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗    ██╔════╝██╔════╝██╔════╝██║   ██║██╔══██╗██║╚══██╔══╝╚██╗ ██╔╝*
+*██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝    ███████╗█████╗  ██║     ██║   ██║██████╔╝██║   ██║    ╚████╔╝ *
+*██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗    ╚════██║██╔══╝  ██║     ██║   ██║██╔══██╗██║   ██║     ╚██╔╝  *
+*╚██████╗   ██║   ██████╔╝███████╗██║  ██║    ███████║███████╗╚██████╗╚██████╔╝██║  ██║██║   ██║      ██║   *
+* ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝   *
+*                                                                                                           *                                                 
+*************************************************************************************************************
+
+      Mr. Warren's Class Notes
+      Ethical Hacking and Cyber Security
+      September 2024 — 6th Period
+-------------------------------------------------------------------------------------------------------------
+
+Welcome to your reference guide! 
+Use `Ctrl-F` to search terms, commands, and definitions easily. 
+Each section contains a short-form definition followed by more details if needed. 
+Happy hacking!
+-------------------------------------------------------------------------------------------------------------
+
+* Sections:
+  - [Commands]
+  - [Networking]
+  - [File Permissions & chmod]
+  - [Process Management]
+  - [Package Management]
+  - [Terminology]
+
+-------------------------------------------------------------------------------------------------------------
+                      [COMMANDS]
+-------------------------------------------------------------------------------------------------------------
+
+1. **ls**:
+    - List contents of a directory.
+    - More: Use `ls -la` for detailed view including hidden files.
+
+2. **pwd**:
+    - Print working directory (shows your current location).
+
+3. **cd**:
+    - Change directory. Use `cd ..` to move up one directory.
+
+4. **mkdir**:
+    - Make a new directory.
+    - More: `mkdir myfolder` creates "myfolder".
+
+5. **touch**:
+    - Create an empty file.
+    - More: `touch newfile.txt` creates "newfile.txt".
+
+6. **rm**:
+    - Remove a file. Use `rm -r` to delete a directory.
+
+7. **cp**:
+    - Copy files or directories.
+    - More: `cp file1.txt /newfolder/` copies file1 to /newfolder/.
+
+8. **mv**:
+    - Move or rename files.
+    - More: `mv oldname.txt newname.txt` renames the file.
+
+9. **cat**:
+    - Show contents of a file.
+    - More: `cat file.txt` shows file contents on the terminal.
+
+-------------------------------------------------------------------------------------------------------------
+                      [NETWORKING]
+-------------------------------------------------------------------------------------------------------------
+
+1. **ifconfig** or **ip a**:
+    - View network interfaces and IP addresses.
+
+2. **ping**:
+    - Test network connectivity.
+    - More: `ping google.com` checks if you can reach Google's servers.
+
+3. **traceroute**:
+    - Trace the path packets take to a destination.
+    - More: `traceroute google.com`.
+
+4. **netstat**:
+    - Display network connections and open ports.
+    - More: Use `netstat -tuln` for TCP/UDP connections.
+
+5. **nmap**:
+    - Network mapping tool to scan open ports.
+    - More: `nmap localhost` to scan your own machine.
+
+-------------------------------------------------------------------------------------------------------------
+           [FILE PERMISSIONS & chmod EXAMPLES]
+-------------------------------------------------------------------------------------------------------------
+
+1. **chmod**:
+    - Change file permissions using numeric codes.
+    
+    ### **Permission Breakdown**:
+      - `r` = Read (4)
+      - `w` = Write (2)
+      - `x` = Execute (1)
+    
+    ### **Examples**:
+    - `chmod 755 file.sh`: 
+      - Owner: Full (rwx)
+      - Group: Read & Execute (rx)
+      - Others: Read & Execute (rx)
+    
+    - `chmod 644 file.txt`: 
+      - Owner: Read & Write (rw)
+      - Group: Read (r)
+      - Others: Read (r)
+    
+    - `chmod 777 folder`: 
+      - Everyone has full permissions (rwx).
+    
+    ### **More combinations**:
+    - **700**: Owner has full (rwx); no access for group/others.
+    - **600**: Owner can read/write; no access for group/others.
+    - **555**: All users can read and execute, but no one can write.
+    - **400**: Owner can read only; no access for group/others.
+
+2. **chown**:
+    - Change file ownership.
+    - More: `sudo chown user:group file.txt` to change owner/group.
+
+3. **ls -l**:
+    - View file permissions in detail.
+
+-------------------------------------------------------------------------------------------------------------
+              [PROCESS MANAGEMENT]
+-------------------------------------------------------------------------------------------------------------
+
+1. **top**:
+    - Show system processes and their resource usage.
+
+2. **ps**:
+    - Display a snapshot of running processes.
+
+3. **kill**:
+    - Terminate a process by ID.
+    - More: `kill 1234` ends process with ID 1234.
+
+4. **df**:
+    - Show disk space usage.
+    - More: `df -h` for human-readable sizes.
+
+5. **du**:
+    - Show directory sizes.
+    - More: `du -h foldername`.
+
+6. **free**:
+    - Show memory usage (RAM and swap).
+
+-------------------------------------------------------------------------------------------------------------
+              [PACKAGE MANAGEMENT]
+-------------------------------------------------------------------------------------------------------------
+
+1. **sudo apt-get update**:
+    - Update the package list.
+
+2. **sudo apt-get upgrade**:
+    - Upgrade installed packages to the latest version.
+
+3. **sudo apt-get install**:
+    - Install new software packages.
+    - More: `sudo apt-get install nmap` installs nmap tool.
+
+4. **sudo apt-get remove**:
+    - Remove software packages.
+
+-------------------------------------------------------------------------------------------------------------
+                      [TERMINOLOGY]
+-------------------------------------------------------------------------------------------------------------
+
+1. **Ethical Hacking**:
+    - The practice of legally breaking into systems to identify weaknesses before malicious hackers do.
+
+2. **Penetration Testing**:
+    - Simulating cyberattacks to evaluate the security of a system.
+
+3. **Firewall**:
+    - A network security system that monitors and controls incoming/outgoing network traffic based on security rules.
+
+4. **Vulnerability**:
+    - A weakness in a system that can be exploited by a threat.
+
+5. **Exploit**:
+    - A piece of code or technique used to take advantage of a vulnerability.
+
+6. **Patch**:
+    - An update or fix designed to improve security and resolve vulnerabilities in software.
+
+7. **Malware**:
+    - Malicious software designed to damage or disrupt systems, such as viruses, worms, or ransomware.
+
+8. **Zero-Day**:
+    - A vulnerability that is exploited before the software vendor has issued a fix.
+
+9. **Encryption**:
+    - The process of converting data into a secure format to prevent unauthorized access.
+
+10. **IP Address**:
+    - A unique identifier for a device on a network.
+
+11. **Port Scanning**:
+    - The technique of probing a system's open ports to identify possible points of entry.
+
+-------------------------------------------------------------------------------------------------------------
+**Use `Ctrl-F` to search through these notes easily!** 
+Stay focused, stay curious, and have fun learning ethical hacking!
+-------------------------------------------------------------------------------------------------------------
