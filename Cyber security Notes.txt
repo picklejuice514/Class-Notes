@@ -1,0 +1,126 @@
+Cyber security Notes
+
+Layer of the OS System Stack:
+Hardware -> Firmware -> BIOS (Binary input/output systems) -> (Operating System starts here) Kernal -> Shell -> File System -> 		
+Underlined = OS 
+
+General notes about OS:
+-	Inside of a computer is like a city
+-	Hardware and firmware are the roads and buildings for the city (computer)
+-	Binary = Machine Language.
+-	BIOS and Firmware run on Assembly.
+-	BIOS is the firmware for the motherboard.
+-	BIOS takes attendance for the computer parts. That is the only job of the BIOS. It checks if everything is working properly.
+-	When the BIOS is done its job, it hands the job to the Kernal. 
+-	Kernal = Seed (metamorphically)
+-	Firmware is the base layer of programming that exists on the hardware itself.
+-	OS is like a building, the Kernal is the shape of that building. So, it does not matter what the Kernal looks like it will still get the job done.
+-	Different OSs are better suited for different tasks. It is like narrow Hallways and wide Hallways.
+-	Kernal is the translator/messenger. It serves as a bridge between the hardware and the software
+-	Kernal sets up what you are going to do, makes the OS more ready for your activities
+-	Kernal sets up that Architecture.
+-	There are 2 types of OS GUY (Graphical User Interface) and Headless
+
+Storage:
+Hard Disk/HDD Hard disk drive:
+Volatile memory is short term memory and fast to access.
+Nonvolatile memory is long term memory and takes longer to get the data out.
+-	Consists of rings
+-	Rings of blocks
+-	A binder is organized just like a Hard Disk
+-	There are millions of blocks in a Hard Disk
+-	We need to label data to know where they belong
+-	At the beginning of a block a part is reserved for addressing (tell where the data is)
+-	Another thing that is reserved in a block that tells us what is stored in this block, It tells which block to go after it is done from this block
+-	Each block has 4kb of storage
+-	Defragmenting will reorganize data to make it faster to read, store them close to each other
+-	Check sum will store compressed data after the processor does the math
+-	If the stored does not match the check sum, then the file will not open
+-	Check sum is a security feature
+-	 A check sum checks for Trogen viruses
+-	Cells inside blocks are made of metal/cobalt 
+-	Magnets can move Cobalt’s atoms
+-	Read write head
+-	We can change cobalt’s north and south poles without flipping the actual piece of metal
+-	Electrons inside atoms flip when certain magnets change it
+-	The read head will generate a wave which can be translated to Binary
+-	If a file leaves a certain amount of space in a hard disk block, then that space is going to be wasted
+
+Virtual Machine:
+-	The main purpose of a virtual machine is to run different operating systems or software without needing separate physical computers for each one. For example, if you have a Windows computer but need to use a program that only works on a Mac, you can create a virtual machine that runs macOS inside your windows computer. This way, you can use that program without needing to buy a separate Mac.
+-	A virtual machine is a thing that utilizes a computer hardware. 
+-	It allows you to run multiple OS
+-	OS controls hardware
+-	VM likes to think it has its own computer components. 
+-	When we setup our VMs we will choose the confines of our system
+-	We can do whatever we want.
+-	Host machine is the machine that hosts the VM.
+-	If a VM is harmed it won’t affect the host computer
+-	
+
+What are permissions in a computer system:
+-	A configuration is a grouping/ How you sort stuff is a configuration/ The way you describe it/
+-	One of the most basic types of hacking is social. Hacking is not all about sitting behind a keyboard with flashing stuff on a screen.
+-	We will setup configurations on our VM
+-	An example of permissions and configuration is our school account.
+-	Companies that are trusted sources have insurance, which can include digital insurance.
+
+Terminal:
+General notes about navigating the terminal:
+•	Terminals are case sensitive.
+•	If there is space in a file name, we must quote the name for it to work.
+•	Linux terminals are case sensitive.
+•	Windows uses back slash (\) Linux uses forward slash (/)
+•	Everything between the cologne and dollar sign is current location.
+•	/home/user/
+•	Flag starts with (-) and then a letter is written after it. Example ls -l
+•	Quotes are used for folders with more than one word.
+•	Can’t make a folder with the same name as something else.
+•	Script vs Program 
+•	Open doesn’t equal run
+Figure out how to:
+•	Make a folder. Yes
+o	mkdir (make directory) 
+•	Make a file (txt) Yes
+o	touch_nameStuff
+•	Rename a folder. Yes	
+•	Rename a file. Yes
+•	Move a folder. Yes
+•	Move a file (txt) Yes
+o	mv_name
+•	{command } –help or ?
+•	Nano 
+o	Save == write out
+•	Change file types. Example: .txt to .odt
+•	Go back 1 Directory
+•	How to delete something 
+Commands:
+•	cd: change directory. Example: nasr@debian:~$ cd Documents
+•	pwd: present working directory. Example: nasr@debian:~$ pwd
+•	ls: gives you a list of all the folders you have access to. Example: nasr@debian:~$ ls
+•	../: Go back up 1. Example: nasr@debian:~$ cd ..
+•	../../: Chain ../ together
+•	clear: clear
+•	ctrl + z: Cancel whatever process you are working on and go back to terminal.
+•	mkdir: Makes new folder inside specified directory. nasr@debian:~$ mkdir (Folder name)
+•	touch: Makes new .txt file in specified directory. nasr@debian:~$ touch (File name)
+•	mv: Renames specified file or folders. Example: nasr@debian:~/Documents$ mv (File or Folder name) (new name)
+•	mv: Moves files and folders to specified locations (Note: /home/user/Documents). nasr@debian:~/Documents$ mv (File or Folder name) (new location)
+•	cd / : Turns location into root directory and that should make the terminal location /
+Bash Commands: 
+•	
+Unorganized notes That need to be organized:
+•	ls -l gives us details 
+•	Touch makes a file
+•	 Op
+•	.sh is for bash files
+•	Files open depending on what file they are
+•	Bash command runs a nano file
+•	In nano variables are written with a “$” beforeclea
+•	Nano and if terminal is very finicky (sensitive)
+•	If statements use [] brackets
+•	-lt means less than
+•	Elif means else if
+•	Fi ends else statement. 
+•	Do ChatGPT assignment
+
