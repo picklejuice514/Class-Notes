@@ -221,7 +221,15 @@ Reasearch:
 Bash Scripting:
 
 1.What is Bash Scripting:
-Bash script is a text file containing a series of commands that are executed by the Bash shell in a Unix/Linux environment.
+Bash script is a text file containing a series of commands that are executed by the Bash shell in a Unix/Linux environment. Every bash script has to start with "#!/bin/bash".
+
+2.
+
+6.2...........
+System monitoring:
+
+6.2...........
+System Secuirity:
 
 
 
