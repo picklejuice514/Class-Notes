@@ -12,6 +12,10 @@ TABLE OF CONTENTS
 3.............. Preparation Tips
 4.............. ChatGPT prompts
 5..............Unorganized Notes 
+6..............Research
+	6.1..............Bash Scripting
+	6.2..............Systmem monitoring
+	6.3..............System Secuirity
 
 Working on: 
 Preparing for the spotcheck
@@ -208,3 +212,17 @@ Examples of your theme may be "Volleyball, hockey, zoo animals, space travel..."
 Unorganized notes That need to be organized:
 
 -------------------------------------------------------------------
+
+
+6..............
+Reasearch:
+
+6.1...........
+Bash Scripting:
+
+1.What is Bash Scripting:
+Bash script is a text file containing a series of commands that are executed by the Bash shell in a Unix/Linux environment.
+
+
+
+
