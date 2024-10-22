@@ -223,13 +223,94 @@ Bash Scripting:
 1.What is Bash Scripting:
 Bash script is a text file containing a series of commands that are executed by the Bash shell in a Unix/Linux environment. Every bash script has to start with "#!/bin/bash".
 
-2.
+2. Basic Syntax
+	Bash shebang: #!/bin/bash
+Shebang meaning: a special line at the beginning of a script that tells the operating system which interpreter to use when executing the script.
+
+Comments: is this symbol #
+
+Variable:
+	name = “Nasr”
+
+If else statements:
+	If [condition] then
+	
+	else
+
+	fi
+
+for loop:
+
+for variable in list; do
+  “Condition
+done
+While loop:
+while [ condition ]; do
+  “Condition”
+Done
+
+
+
+
+
+3. Key bash commands:
+	“echo” 
+		Example: echo “Hello World”
+		Reads out specified text
+
+	“read”
+		Reads input from the user
+		Example: read name/ echo “your name is” $name”
+
+	“touch”
+		Creates an empty file
+		Example: touch newfile.txt
+
+	“mkdir”
+		Creates a new directory/folder
+		Example: mkdir newfolder
+
 
 6.2...........
-System monitoring:
+System Monitoring:
 
-6.2...........
+1. Definition: What is System Monitoring?
+System monitoring is the process of observing and reviewing the system’s resources (such as CPU, memory, disk, and network usage) in real-time or over a period. It helps identify issues in the system
+
+2. Key Tools for System Monitoring:
+
+2a. top
+Definition: top displays real-time system processes, resource usage (CPU, memory), and allows you to sort processes by different metrics.
+Usage: By default, top shows running processes and updates every few seconds. You can press q to quit.
+
+2b. htop
+Definition: htop is an enhanced, more interactive version of top, providing a more user-friendly and colorful display of system resource usage.
+htop
+Usage: You can scroll through processes and see memory usage more clearly. Press F10 to quit.
+
+
+2c. df (Disk Free)
+Definition: df displays information about disk space usage of file systems.
+Usage: The -h flag displays the output in a human-readable format (e.g., GB/MB). Use this to check available and used disk space.
+
+2d. uptime
+Definition: uptime shows how long the system has been running, the number of logged-in users, and the system load averages over the last 1, 5, and 15 minutes. Usage: Great for a quick overview of system health and load.
+
+2e. System monitoring app, installed by default on linux
+
+
+6.3...........
 System Secuirity:
+
+1. What is System Security?
+System security on Linux is about protecting your computer from unauthorized access, damage, or misuse. It involves making sure only the right people can access files and preventing anyone from messing up your system.
+
+2. File Permissions
+File permissions decide who can do what with files and folders. The main permissions are:
+
+Read (r): Can see what’s inside a file.
+Write (w): Can change the contents of a file.
+Execute (x): Can run a file as a program.
 
 
 
