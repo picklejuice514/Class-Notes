@@ -16,6 +16,7 @@ TABLE OF CONTENTS
 	6.1..............Bash Scripting
 	6.2..............Systmem monitoring
 	6.3..............System Secuirity
+7..............Git commands
 
 Working on: 
 Preparing for the spotcheck
@@ -316,54 +317,71 @@ Execute (x): Can run a file as a program.
 7.............
 Terminal Git commands:
 
-1. Working with Repositories
+1.
+git init
+Initialize a new Git repository in your project.
+
+2.
 git clone <repository-url>
-Clones an existing repository from a URL to your local machine.
+Copy (clone) an existing remote repository to your local machine.
 
 git status
-Shows the current state of your working directory (what's staged, not staged, or untracked).
+Check the status of changes in your project (e.g., modified, staged, untracked files).
 
-2. Adding & Committing Changes
-git add <file>
-Stages a specific file for commit. Use . to stage all changes (e.g., git add .).
+3.
+git add <file-name>
+Stage a specific file for commit.
 
-git commit -m "commit message"
-Commits staged changes with a message describing the changes.
+4.
+git add .
+Stage all modified and untracked files for commit.
 
-3. Branching
-git branch
-Lists all branches in your repository.
+5.
+git commit -m "Your commit message"
+Commit changes in the staging area with a descriptive message.
 
-git branch <branch-name>
-Creates a new branch.
-
-git checkout <branch-name>
-Switches to a specific branch.
-
-git merge <branch-name>
-Merges a specific branch into the current branch.
-
-4. Pushing & Pulling
-git push origin <branch-name>
-Pushes your committed changes to the remote repository (e.g., GitHub) on the specified branch.
-
-git pull
-Fetches changes from the remote repository and merges them into your local branch.
-
-5. Logs & History
+6.
 git log
-Shows commit history in your repository.
+View the history of commits in the repository.
 
-6. Undo Changes
-git reset <file>
-Unstages a file that was added with git add.
+7.
+git branch <branch-name>
+Create a new branch with the specified name.
 
-git checkout -- <file>
-Discards changes in a specific file that haven't been staged.
+8.
+git checkout <branch-name>
+Switch to another branch.
 
-7. Deleting a Branch
+9.
+git merge <branch-name>
+Merge changes from the specified branch into the current branch.
+
+10.
 git branch -d <branch-name>
-Deletes a branch. Use -D instead of -d to force delete.
+Delete a local branch.
+
+11.
+git push origin <branch-name>
+Push commits from your local branch to the corresponding branch on the remote repository.
+
+12.
+git pull origin <branch-name>
+Fetch and merge changes from a remote branch into your current branch.
+
+13.
+git stash
+Temporarily save changes without committing them.
+
+14.
+git stash apply
+Apply the last stashed changes back into your working directory.
+
+15.git diff
+View differences between changes in your working directory and the last commit.
+
+16.
+git fetch
+Retrieve updates from the remote repository without merging them.
 
 
 
