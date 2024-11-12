@@ -42,6 +42,8 @@ GIT
 	ls -l gives us details
 	su -: switch user, usually the root user
 	sudo: stands for "super user do"
+	find: 
+	grep: 
 	
 --------------------------------------------------------------------
 
