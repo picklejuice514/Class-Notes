@@ -16,7 +16,7 @@ TABLE OF CONTENTS
 	6.1..............Bash Scripting
 	6.2..............Systmem monitoring
 	6.3..............System Secuirity
-7..............Git commands
+7..............Git commands COMMENT
 
 Working on: 
 Preparing for the spotcheck
